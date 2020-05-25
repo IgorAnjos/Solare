@@ -5,7 +5,7 @@ ___
 ## Definição
 1. Padronizar os nomes das Issues:
 
-As numerações serão de acordo com o tipo, por exemplo:
+As numerações serão de acordo com o tipo, por exemplo (branches):
 - Database
     * [SOL-D001]
 - Backend
@@ -28,6 +28,7 @@ Todas as Issues devem conter informações referentes ao projeto número da Ativ
 1.1 Label da Issue:
 
 Escolher a label de acordo com a solicitação da Issues:
+    - Starting Project (Iniciando Projeto)
     - Bug (Erro)
     - Code Review (Revisão de código)
     - Documentation (Documentação)
