@@ -1,0 +1,9 @@
+// Para adicionar os arquivos do Identity necessário instalar os seguintes pacote
+-- dotnet tool install --global dotnet-aspnet-codegenerator
+-- dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+
+//listar arquivos do Identity
+dotnet aspnet-codegenerator identity --listFiles
+
+// Adicionar arquivos do Identity no projeto
+dotnet aspnet-codegenerator identity -dc crmSolare.Data.ApplicationDbContext --files Account.Manage._Layout
