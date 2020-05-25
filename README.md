@@ -39,7 +39,8 @@ Escolher a label de acordo com a solicitação da Issues:
 2. Padronizar as mensagens de commits:
 
 Prefixo para os commits de acordo com a categoria
-
+    
+    - initial: Commit Initial
     - chore: (tarefa) funcionalidade
     - docs: (documentação) readme
     - feat: (parceria) componentes externos
