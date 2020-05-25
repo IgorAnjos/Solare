@@ -60,7 +60,7 @@ ___
 
 1. Primeira Versão de entrega do Solare 1.0.0
 
-1.1 Minimum Viable Product (MVP)
+   1.1 Minimum Viable Product (MVP)
 
       * Cadastro de Cliente
       * Cadastro de Serviço (Produto)
@@ -71,18 +71,18 @@ ___
       * Cadastro de Atendimento
       * Login
 
-1.2 Segunda Versão de entrega do Solare 1.1.0
-   * Relatório básico (Excel e PDF)
-   * Anexo de Arquivos 
-   * Importar/Exportar dados (excel)
-   * Consultar API de CEP
-   * Melhorias/Novas Funcionalidades
+   1.2 Segunda Versão de entrega do Solare 1.1.0
+      * Relatório básico (Excel e PDF)
+      * Anexo de Arquivos 
+      * Importar/Exportar dados (excel)
+      * Consultar API de CEP
+      * Melhorias/Novas Funcionalidades
 
-1.3 Terceira Versão de entrega do Solare 1.2.0
-   * Controle de Pagamento
-   * Criação de API Solare
-   * Análisar possibilidade de Integração com o Sistema Pegasus
-   * Melhorias/Novas Funcionalidades
+   1.3 Terceira Versão de entrega do Solare 1.2.0
+      * Controle de Pagamento
+      * Criação de API Solare
+      * Análisar possibilidade de Integração com o Sistema Pegasus
+      * Melhorias/Novas Funcionalidades
 
 ___
 ## Tecnologias e Conceitos utilizados
@@ -93,7 +93,7 @@ ___
 - [x] MVC
 - [x] SQLServer
 - [x] Razor
-- [x] HTML 5
+- [x] HTML5
 - [x] CSS3
 - [x] Bootstrap
 
