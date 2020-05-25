@@ -1,6 +1,6 @@
 using System;
 
-namespace web.Models
+namespace Solare.Models
 {
     public class ErrorViewModel
     {
