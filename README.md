@@ -12,7 +12,6 @@ As numerações serão de acordo com o tipo, por exemplo (branches):
     * [SOL-B001]
     
 - Frontend
-    Exemplos:
     * [SOL-F001]
     
 - API
@@ -26,35 +25,36 @@ Todas as Issues devem conter informações referentes ao projeto número da Ativ
 - [SOL-B001] - Funcionalidade para Adicionar um Cliente
 
 1.1 Label da Issue:
-
 Escolher a label de acordo com a solicitação da Issues:
-    - Starting Project (Iniciando Projeto)
-    - Bug (Erro)
-    - Code Review (Revisão de código)
-    - Documentation (Documentação)
-    - Help (Socorro)
-    - Functionality (Funcionalidade)
-    - Improvement (Melhoria)
+
+- Starting Project (Iniciando Projeto)
+- Bug (Erro)
+- Code Review (Revisão de código)
+- Documentation (Documentação)
+- Help (Socorro)
+- Functionality (Funcionalidade)
+- Improvement (Melhoria)
 
 2. Padronizar as mensagens de commits:
 
 Prefixo para os commits de acordo com a categoria
     
-    - initial: Commit Initial
-    - chore: (tarefa) funcionalidade
-    - docs: (documentação) readme
-    - feat: (parceria) componentes externos
-    - fix: (correção) ajuste de bug
-    - refactor: (refatorar) melhorar o código clean code
-    - style: (estilo) css,js,styled-components
-    - test: (teste)
+- initial: Commit Initial
+- chore: (tarefa) funcionalidade
+- docs: (documentação) readme
+- feat: (parceria) componentes externos
+- fix: (correção) ajuste de bug
+- refactor: (refatorar) melhorar o código clean code
+- style: (estilo) css,js,styled-components
+- test: (teste)
 
 3. Padronizar versão do Solare
 
 Dado um número de versão MAJOR.MINOR.PATCH, incremente a:
-    * Versão Maior(MAJOR): quando fizer mudanças incompatíveis na apicação.
-    * Versão Menor(MINOR): quando adicionar funcionalidades mantendo compatibilidade.
-    * Versão de Correção(PATCH): quando corrigir falhas mantendo compatibilidade.
+
+* Versão Maior(MAJOR): quando fizer mudanças incompatíveis na apicação.
+* Versão Menor(MINOR): quando adicionar funcionalidades mantendo compatibilidade.
+* Versão de Correção(PATCH): quando corrigir falhas mantendo compatibilidade.
 ___
 ## Projeto Web
 
