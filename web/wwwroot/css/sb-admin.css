@@ -10722,3 +10722,14 @@ body.sidebar-toggled footer.sticky-footer {
     width: calc(100% - 90px);
   }
 }
+
+
+#info-tab,
+#address-tab,
+#contact-tab {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#userName {
+  color: rgba(255, 255, 255, 0.75);
+}

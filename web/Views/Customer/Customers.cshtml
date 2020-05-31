@@ -1,0 +1,29 @@
+@{
+    Layout = "_MainLayout";
+}
+
+<h2>Clientes</h2>
+<hr>
+<a asp-action="CustomerAdd" asp-controller="Customer" class="btn btn-success">Novo Cliente</a>
+<hr>
+
+<table class="table table-striped table-bordred">
+    <thead>
+        <td>Id</td>
+        <td>Nome</td>
+        <td>Ações</td>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Igor Macedo</td>
+            <td>
+                <a class="btn btn-primary">Editar</a>
+                <form asp-action="Deletar" asp-controller="Categoria" style="display: inline;">
+                    <input type="hidden" name="id" id="id" value="">
+                    <button class="btn btn-danger">Deletar</button>
+                </form>
+            </td>
+        </tr>
+    </tbody>
+</table>
