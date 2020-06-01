@@ -1,0 +1,28 @@
+@{
+    Layout="_MainLayout";
+}
+
+<h3>Novo Serviço</h3>
+<hr>
+ 
+<form class="form-horizontal" method="POST" asp-controller="Service" asp-action="Save" id="idForm">                    
+    <input class="form-control" type="hidden" name="Id" id="Id" value="0">
+
+    <label for="txtServiceName">Nome do Serviço</label>
+    <input class="form-control" type="text" name="ServiceName" id="txtServiceName" required autofocus>
+    <br>
+    <label for="txtServiceValue">Valor</label>
+    <input class="form-control" type="text" name="ServiceValue" id="txtServiceValue">
+    <br>
+    <input class="" type="checkbox" name="Enable" id="txtEnable">
+    <label for="txtEnable">Ativo</label>
+    <br>
+    <input class="" type="checkbox" name="promotion" id="txtpromotion">
+    <label for="txtpromotion">Disponível para Promoção</label>
+    <hr>
+    <div class="cst_btn">
+        <button class="btn btn-success">Gravar</button>
+        
+        <a class="btn btn-secondary" href="https://localhost:5001/Service/Services">Voltar</a>
+    </div>
+</form>
