@@ -1,19 +1,19 @@
-
 using System;
 
 namespace web.Models
 {
-    public class Service
+    public class Scheduled
     {
         public int Id { get; set; }
-        public string ServiceName { get; set; }
-        public decimal Price { get; set; }
-        public bool Enabled { get; set; }
+        public SchedulingType Type { get; set; }
+        public DateTime Date { get; set; }
+        public DateTime Time { get; set; }
+        public Customer CustomerId { get; set; }
         public int CreatedBy { get; set; }
         public DateTime CreatedOn { get; set; }
         public int ModifieldBy { get; set; }
         public DateTime ModifieldOn { get; set; }
         
-        //public Promotion PromotionId { get; set; }
+        // public int MyProperty { get; set; } Atendido por
     }
 }
