@@ -10,7 +10,7 @@ namespace web.Models.DTO
         {
             return String.Format(
                 "Id={0} FullName={1} CustomerType={2} AddressBirth={3} Contact={4} AddressCurrent={5} CreatedBy={6} CreatedOn={7} ModifieldBy={8}",
-                Id, FullName, Type, AddressBirth, Contact, AddressCurrent, CreatedBy, CreatedOn, ModifieldBy);
+                Id, FullName, Type, AddressBirthID, ContactID, AddressCurrentID, CreatedBy, CreatedOn, ModifieldBy);
         }
         
         [Required]
