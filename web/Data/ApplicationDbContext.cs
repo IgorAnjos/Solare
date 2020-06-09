@@ -9,7 +9,9 @@ namespace web.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {
-        DbSet<AddressBirth> AddressBirths { get; set; }
+        public DbSet<Service> Services { get; set; }
+        DbSet<Promotion> Promotions { get; set; }
+        public DbSet<AddressBirth> AddressBirths { get; set; }
         DbSet<AddressCurrent> AddressCurrents { get; set; }
         DbSet<Contact> Contacts { get; set; }
         DbSet<Customer> Customers{ get; set; }
