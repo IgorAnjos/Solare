@@ -1,3 +1,5 @@
+using System;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using web.Data;
 using web.Models;
@@ -13,6 +15,7 @@ namespace web.Controllers
         {
             this.database = _applicationDbContext;
         }
+
         public IActionResult Customers(){
             return View();
         }
@@ -31,8 +34,12 @@ namespace web.Controllers
                 Customer customer = new Customer();
 
                 customer.FullName = _customerDTO.FullName;
-                customer.CustomerType = _customerDTO.Type;
-                //continuar
+                customer.Type = _customerDTO.Type;
+                customer.AddressBirth = database.AddressBirths.First(i => i.Id == _customerDTO.AddressBirthID);
+                customer.Enable = true;
+                customer.CreatedOn = DateTime.Now;
+
+
 
                 //database.Customers.Add(customer);
                 database.SaveChanges();
