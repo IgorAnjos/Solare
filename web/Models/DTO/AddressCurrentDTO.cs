@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace web.Models.DTO
@@ -29,4 +30,5 @@ namespace web.Models.DTO
         [Display(Name = "Estado")]
         public string State { get; set; }
     }
+    //public class AddressCurrentDTOCollection : List<AddressCurrentDTO> { }
 }

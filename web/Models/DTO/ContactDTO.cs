@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace web.Models.DTO
@@ -15,4 +16,5 @@ namespace web.Models.DTO
         [DataType("PhoneNumber")]
         public string Telephone { get; set; }
     }
+    //public class ContactDTOCollection : List<ContactDTO> { }
 }
