@@ -1,3 +1,5 @@
+@model web.Models.DTO.CustomerViewModel;
+
 @{
     Layout="_MainLayout";
 }
@@ -27,37 +29,38 @@
         <br>
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="info-tab">
+                <input type="hidden" asp-for="Customer.Id" value="0">
                 <div>
-                    <input type="radio" name="inlineRadioOptions" id="rdCustomerPerson" value="1">
+                    <input asp-for="Customer.Type" type="radio" name="inlineRadioOptions" id="rdCustomerPerson" value="1">
                     <label for="rdCustomerPerson">Pessoa</label>
             
-                    <input type="radio" name="inlineRadioOptions" id="rdCustomerCompany" value="2">
+                    <input asp-for="Customer.Type" type="radio" name="inlineRadioOptions" id="rdCustomerCompany" value="2">
                     <label for="rdCustomerCompany">Empresa</label>
                 </div>
                 <div>
                     <label for="txtName">Nome Completo</label>
-                    <input class="form-control" type="text" name="FullName" id="txtName" required autofocus>
+                    <input asp-for="Customer.FullName" class="form-control" type="text" name="FullName" id="txtName" required autofocus>
                     
                     <label for="txtDateOfBirth">Data de Nascimento</label>
-                    <input class="form-control" type="date" name="DateOfBirth" id="txtDateOfBirth" required>                        
+                    <input asp-for="AddressBirth.DateOfBirth" class="form-control" type="date" name="DateOfBirth" id="txtDateOfBirth" required>                        
                     
                     <label for="txtBirthTime">Horário de Nascimento</label>
-                    <input class="form-control" type="time" name="BirthTime" id="txtBirthTime" required>
+                    <input asp-for="AddressBirth.BirthTime" class="form-control" type="time" name="BirthTime" id="txtBirthTime" required>
 
                     <label for="txtCityOfBirth">Cidade de Nascimento</label>
-                    <input class="form-control" type="text" name="CityBirth" id="txtCityOfBirth" required>
+                    <input asp-for="AddressBirth.CityBirth" class="form-control" type="text" name="CityBirth" id="txtCityOfBirth" required>
 
                     <label for="txtBirthState">Estado de Nascimento</label>
-                    <input class="form-control" type="text" name="BirthOfState" id="txtBirthState" required>
+                    <input asp-for ="AddressBirth.BirthOfState" class="form-control" type="text" name="BirthOfState" id="txtBirthState" required>
 
                     <label for="txtEmail">E-mail</label>                        
-                    <input class="form-control" type="text" name="Email" id="txtEmail" autofocus>
+                    <input asp-for="Contact.Email" class="form-control" type="text" name="Email" id="txtEmail" autofocus>
                     
                     <label for="txtMobile">Mobile</label>
-                    <input class="form-control" type="text" maxlength="16" name="Mobile" id="txtMobile">
+                    <input asp-for="Contact.Mobile" class="form-control" type="text" maxlength="16" name="Mobile" id="txtMobile">
 
                     <label for="txtTelephone">Telephone</label>
-                    <input class="form-control" type="text" maxlength="16" name="Telephone" id="txtTelephone">
+                    <input asp-for="Contact.Telephone" class="form-control" type="text" maxlength="16" name="Telephone" id="txtTelephone">
                 </div>
             </div>
             
