@@ -10,11 +10,11 @@ namespace web.Data
     public class ApplicationDbContext : IdentityDbContext
     {
         public DbSet<Service> Services { get; set; }
-        DbSet<Promotion> Promotions { get; set; }
+        public DbSet<Promotion> Promotions { get; set; }
         public DbSet<AddressBirth> AddressBirths { get; set; }
-        DbSet<AddressCurrent> AddressCurrents { get; set; }
-        DbSet<Contact> Contacts { get; set; }
-        DbSet<Customer> Customers{ get; set; }
+        public DbSet<AddressCurrent> AddressCurrents { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
+        public DbSet<Customer> Customers{ get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
