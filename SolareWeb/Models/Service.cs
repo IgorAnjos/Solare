@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SolareWeb.Models
 {
@@ -6,7 +7,10 @@ namespace SolareWeb.Models
     {
         public int Id { get; set; }
         public string ServiceName { get; set; }
+        
+        [Column(TypeName = "decimal(18,2)")]
         public decimal Price { get; set; }
+        
         public bool Enabled { get; set; }
         public int CreatedBy { get; set; }
         public DateTime CreatedOn { get; set; }
