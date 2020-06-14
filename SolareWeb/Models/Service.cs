@@ -1,4 +1,3 @@
-
 using System;
 
 namespace SolareWeb.Models
@@ -13,7 +12,5 @@ namespace SolareWeb.Models
         public DateTime CreatedOn { get; set; }
         public int ModifieldBy { get; set; }
         public DateTime ModifieldOn { get; set; }
-        
-        //public Promotion PromotionId { get; set; }
     }
 }
