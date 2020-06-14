@@ -14,6 +14,7 @@ namespace SolareWeb.Data
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Service> Services { get; set; }
+        public DbSet<ServiceLocation> ServiceLocations { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
