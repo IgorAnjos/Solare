@@ -8,7 +8,8 @@ namespace SolareWeb.Models
         public SchedulingType Type { get; set; }
         public DateTime Date { get; set; }
         public DateTime Time { get; set; }
-        public Customer CustomerId { get; set; }
+        public int CustomerId { get; set; }
+        public int ServiceId { get; set; }
         public int CreatedBy { get; set; }
         public DateTime CreatedOn { get; set; }
         public int ModifieldBy { get; set; }

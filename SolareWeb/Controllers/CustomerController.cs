@@ -32,7 +32,7 @@ namespace SolareWeb.Controllers
             try
             {
                 if (ModelState.IsValid)
-                {                   
+                {
                     #region Customer
 
                     Customer c = new Customer();
