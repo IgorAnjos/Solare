@@ -15,7 +15,7 @@ namespace SolareWeb.Models
         public DateTime CreatedOn { get; set; }
         public int ModifieldBy { get; set; }
         public DateTime ModifieldOn { get; set; }
-        //public Contact ContactID { get; set; }
+        //public int ContactID { get; set; }
         //public AddressCurrent AddressCurrentID { get; set; }
     }
 }
