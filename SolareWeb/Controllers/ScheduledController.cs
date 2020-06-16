@@ -1,6 +1,8 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using SolareWeb.Data;
+using SolareWeb.Models;
 
 namespace SolareWeb.Controllers
 {
@@ -17,6 +19,30 @@ namespace SolareWeb.Controllers
             ViewBag.Customers = database.Customers.ToList();
             ViewBag.Services = database.Services.ToList();
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult Save([FromBody]Scheduled _scheduled)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+
+            Scheduled s = new Scheduled();
+
+            s.Id = _scheduled.Id;
+            s.Date = _scheduled.Date;
+            s.Time = _scheduled.Time;
+            s.CustomerId = _scheduled.CustomerId;
+            s.ServiceId = _scheduled.ServiceId;
+            s.CreatedBy = 1;
+            s.CreatedOn = s.ModifieldOn = DateTime.Now;
+
+            database.Scheduleds.Add(s);
+            database.SaveChanges();
+
+            return RedirectToAction("Scheduleds");
         }
     }
 }
