@@ -94,10 +94,10 @@ ___
 - [x] .NET Core Identity
 - [x] MVC
 - [x] SQLServer
-- [x] Razor
 - [x] HTML5
 - [x] CSS3
 - [x] Bootstrap
+- [x] Angular
 
 **Tecnologias que podem ser usadas**
 **Desejo de incrementar**
