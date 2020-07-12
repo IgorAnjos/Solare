@@ -23,7 +23,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form>
+                <form method="POST" asp-controller="Scheduled" asp-action="Save" id="idForm">
                     <input type="hidden" name="id" value="0" />
                     <div class="form-group">
                         <label class="col-form-label">Cliente</label>
@@ -45,7 +45,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary">Agendar</button>
+                <button class="btn btn-success">Agendar</button>
             </div>
         </div>
     </div>
