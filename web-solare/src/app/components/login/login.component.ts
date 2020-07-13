@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  public title = 'Acessar o Solare';
+  public newAccount = 'Crie uma conta';
+  public forgotPassword= 'Esqueceu a senha?';
+
   constructor() { }
 
   ngOnInit(): void {

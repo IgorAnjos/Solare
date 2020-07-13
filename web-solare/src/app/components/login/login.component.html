@@ -1,1 +1,44 @@
-<p>login works!</p>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="card">
+      <div class="card-header">
+        <div class="d-flex links">
+					<a href="#">{{ newAccount }}</a>
+				</div>
+      </div>
+			<div class="card-body">
+        <h3>{{ title }}</h3>
+				<form>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text">
+                <span class="material-icons">account_circle</span>
+              </span>
+						</div>
+						<input type="text" class="form-control" placeholder="login" required autofocus>
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text">
+                <span class="material-icons">vpn_key</span>
+              </span>
+						</div>
+						<input type="password" class="form-control" placeholder="senha" required>
+					</div>
+					<div class="row align-items-center remember">
+            <input id="chkPassword" type="checkbox">
+            <label for="chkPassword">Lembrar-me</label>
+          </div>
+					<div class="form-group">
+						<input type="submit" value="Login" class="btn float-right login_btn">
+					</div>
+				</form>
+			</div>
+			<div class="card-footer">
+        <div class="d-flex justify-content-center">
+          <a href="#">{{ forgotPassword }}</a>
+        </div>
+			</div>
+		</div>
+  </div>
+</div>
