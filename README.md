@@ -2,6 +2,8 @@
 Sistema web de gerenciamento e agendamentos de cliente 
 ___
 
+# Em Desenvolvimento
+
 ## Definição
 1. Padronizar os nomes das Issues:
 
