@@ -1,5 +1,5 @@
 # Solare
-Sistema web de gerenciamento de agendamentos de cliente 
+Sistema web de gerenciamento e agendamentos de cliente 
 ___
 
 ## Definição
@@ -56,40 +56,9 @@ Dado um número de versão MAJOR.MINOR.PATCH, incremente a:
 * Versão Menor(MINOR): quando adicionar funcionalidades mantendo compatibilidade.
 * Versão de Correção(PATCH): quando corrigir falhas mantendo compatibilidade.
 ___
-## Projeto Web
-
-***obs: Sujeito a alterações***
-
-1. Primeira Versão de entrega do Solare 1.0.0
-
-   1.1 Minimum Viable Product (MVP)
-
-      * Cadastro de Cliente
-      * Cadastro de Serviço (Produto)
-      * Cadastro de Promoção
-      * Cadastro de Plano
-      * Cadastro de Local de Atendimento
-      * Cadastro de Agendamento
-      * Cadastro de Atendimento
-      * Login
-
-   1.2 Segunda Versão de entrega do Solare 1.1.0
-      * Relatório básico (Excel e PDF)
-      * Anexo de Arquivos 
-      * Importar/Exportar dados (excel)
-      * Consultar API de CEP
-      * Melhorias/Novas Funcionalidades
-
-   1.3 Terceira Versão de entrega do Solare 1.2.0
-      * Controle de Pagamento
-      * Criação de API Solare
-      * Análisar possibilidade de Integração com o Sistema Pegasus
-      * Melhorias/Novas Funcionalidades
-
-___
 ## Tecnologias e Conceitos utilizados
 
-- [x] C# 7/8/9 (.NET Core 3.1)
+- [x] C# (.NET Core 3.1)
 - [x] Entity Framework Core
 - [x] .NET Core Identity
 - [x] MVC
@@ -103,7 +72,6 @@ ___
 **Desejo de incrementar**
 - [ ] Styled Components
 - [ ] Blazor
-- [ ] Vue
 - [ ] Solid
 - [ ] TDD
 - [ ] Designer Patterns
@@ -112,7 +80,6 @@ ___
 - [ ] ADO.NET
 - [ ] NLog
 - [ ] Crystal Reports
-- [ ] Pentaho
 - [ ] SignalR
 - [ ] Globalization
 
