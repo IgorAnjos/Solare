@@ -1,1 +1,43 @@
-<p>nav-menu works!</p>
+<div id="nav-menu" class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a id="nav-menu-name" class="navbar-brand">{{ title }}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-menu-li nav-item">
+          <a class="nav-link">{{ menuOne }}</a>
+        </li>
+        <li class="nav-menu-li nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ menuTwo }}
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" >Cliente</a>
+            <a class="dropdown-item" >Serviço/Produto</a>
+            <a class="dropdown-item" >Espaço de Atendimento</a>
+          </div>
+        </li>
+        <li class="nav-menu-li nav-item">
+          <a class="nav-link">
+            {{ menuThree }}
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-user nav-item">
+          <a class="nav-link">
+            {{ userLogado }}
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-logout nav-link">
+            Sair
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>

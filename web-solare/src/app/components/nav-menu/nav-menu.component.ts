@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavMenuComponent implements OnInit {
 
+  public title = 'Solare';
+  public menuOne = 'Página Inicial';
+  public menuTwo = 'Cadastro';
+  public menuThree = 'Atendimento';
+  public userLogado = 'Usuário Logado';
+
   constructor() { }
 
   ngOnInit(): void {
