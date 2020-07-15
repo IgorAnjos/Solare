@@ -76,14 +76,14 @@ ___
 - [ ] Blazor
 - [ ] Solid
 - [ ] TDD
-- [ ] Designer Patterns
+- [x] Designer Patterns
 - [ ] CQRS
 - [ ] Clean Code
 - [ ] ADO.NET
-- [ ] NLog
+- [x] NLog
 - [ ] Crystal Reports
 - [ ] SignalR
-- [ ] Globalization
+- [x] Globalization
 
 ### **Hospedagem**
 - [ ] HostGator
