@@ -1,1 +1,14 @@
-<p>service-location-add works!</p>
+<nav-menu></nav-menu>
+<form class="form-horizontal formInput" method="POST">
+  <div class="container mtop-mbottom">
+    <div class="form-group col-md-6">
+      <input class="form-control" type="hidden" id="Id" value="0">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="txtServiceLocationName">Nome</label>
+      <input class="form-control" type="text" id="txtServiceLocationName" required autofocus>
+    </div>
+    <button class="btn btn-color">Gravar</button>
+    <a [routerLink]="['/service-location']" class="btn a-return">Voltar</a>
+  </div>
+</form>

@@ -4,3 +4,36 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Header */
+
+
+/* Botão voltar */
+.a-return
+{
+  background-color: #f5f5f5;
+}
+
+.a-return:hover
+{
+  background-color: #ebebeb;
+}
+
+/* Botão Gravar/Adicionar/Novo */
+.btn-color
+{
+  background-color: blueviolet;
+  color: #fff;
+}
+
+.btn-color:hover
+{
+  background-color: #8110cb;
+}
+
+/* Form Imputs */
+.mtop-mbottom
+{
+  margin-top: 3em;
+  margin-bottom: 3em;
+}

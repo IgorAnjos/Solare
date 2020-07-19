@@ -1,1 +1,20 @@
-<p>service-product-add works!</p>
+<nav-menu></nav-menu>
+<form class="form-horizontal" method="POST">
+  <div class="container mtop-mbottom">
+    <div class="form-group col-md-6">
+      <input class="form-control" type="hidden" id="Id" value="0">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="txtServiceName">Nome do Serviço</label>
+      <input class="form-control col-md-6" type="text" id="txtServiceName" required autofocus>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="txtServiceValue">Valor</label>
+      <input asp-for="Price" class="form-control col-md-6" type="text" id="txtServiceValue" required>
+    </div>
+    <!-- <input class="" type="checkbox" name="promotion" id="txtpromotion">
+    <label for="txtpromotion">Disponível para Promoção</label> -->
+    <button class="btn btn-color">Gravar</button>
+    <a [routerLink]="['/service-product']" class="btn a-return">Voltar</a>
+  </div>
+</form>

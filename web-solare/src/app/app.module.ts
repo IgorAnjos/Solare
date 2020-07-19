@@ -17,7 +17,6 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './components/home/home.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
