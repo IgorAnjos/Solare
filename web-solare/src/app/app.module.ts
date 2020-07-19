@@ -1,9 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { LoginComponent } from './components/login/login.component';
 import { CustomerComponent } from './components/customer/customer.component';
@@ -16,6 +14,8 @@ import { CustomerAddComponent } from './components/customer-add/customer-add.com
 import { ServiceProductAddComponent } from './components/service-product-add/service-product-add.component';
 import { ServiceLocationAddComponent } from './components/service-location-add/service-location-add.component';
 import { BtnSaveComponent } from './components/btn-save/btn-save.component';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -37,6 +37,7 @@ import { BtnSaveComponent } from './components/btn-save/btn-save.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
+    BsDropdownModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

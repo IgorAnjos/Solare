@@ -10,14 +10,14 @@
         <li class="nav-menu-li nav-item">
           <a class="nav-link">{{ menuOne }}</a>
         </li>
-        <li class="nav-menu-li nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="nav-menu-li nav-item dropdown" dropdown>
+          <a class="nav-link dropdown-toggle" dropdownToggle id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             {{ menuTwo }}
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" >Cliente</a>
-            <a class="dropdown-item" >Serviço/Produto</a>
-            <a class="dropdown-item" >Espaço de Atendimento</a>
+          <div id="button-basic" *dropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a [routerLink]="['/routePath']"  class="dropdown-item nav-item-a" >Cliente</a>
+            <a [routerLink]="['/routePath']" class="dropdown-item nav-item-a" >Serviço/Produto</a>
+            <a [routerLink]="['/routePath']" class="dropdown-item nav-item-a" >Espaço de Atendimento</a>
           </div>
         </li>
         <li class="nav-menu-li nav-item">
@@ -26,14 +26,18 @@
           </a>
         </li>
       </ul>
-      <ul class="navbar-nav">
-        <li class="nav-user nav-item">
-          <a class="nav-link">
+      <ul class="navbar-nav" dropdown>
+        <li class="nav-menu-li nav-item dropdown nav-user nav-item">
+          <a class="nav-link dropdown-toggle" dropdownToggle id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             {{ userLogado }}
           </a>
+          <div id="button-basic" *dropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a [routerLink]="['/routePath']" class="dropdown-item nav-item-a" >Perfil</a>
+            <a [routerLink]="['/routePath']" class="dropdown-item nav-item-a" >Configuração</a>
+          </div>
         </li>
         <li class="nav-item">
-          <a class="nav-logout nav-link">
+          <a [routerLink]="['/routePath']" class="nav-logout nav-link">
             Sair
           </a>
         </li>
