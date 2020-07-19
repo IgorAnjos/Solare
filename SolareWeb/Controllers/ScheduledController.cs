@@ -6,7 +6,8 @@ using SolareWeb.Models;
 
 namespace SolareWeb.Controllers
 {
-    public class ScheduledController : Controller
+    [ApiController]
+    public class ScheduledController : ControllerBase
     {
         private readonly ApplicationDbContext database;
         public ScheduledController(ApplicationDbContext _dbContext)
@@ -16,9 +17,9 @@ namespace SolareWeb.Controllers
 
         public IActionResult Scheduleds()
         {
-            ViewBag.Customers = database.Customers.ToList();
-            ViewBag.Services = database.Services.ToList();
-            return View();
+            //ViewBag.Customers = database.Customers.ToList();
+            //ViewBag.Services = database.Services.ToList();
+            return Ok();
         }
 
         [HttpPost]
@@ -26,7 +27,7 @@ namespace SolareWeb.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return View();
+                return Ok();
             }
 
             Scheduled s = new Scheduled();

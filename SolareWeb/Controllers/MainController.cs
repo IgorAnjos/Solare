@@ -4,12 +4,13 @@ using System.Linq;
 
 namespace SolareWeb.Controllers
 {
-    public class MainController : Controller
+    [ApiController]
+    public class MainController : ControllerBase
     {
 
         public IActionResult Index()
         {
-            return View();
+            return Ok();
         }
     }
 }

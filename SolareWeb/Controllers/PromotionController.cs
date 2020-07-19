@@ -2,27 +2,28 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace SolareWeb.Controllers
 {
-    public class PromotionController : Controller
+    [ApiController]
+    public class PromotionController : ControllerBase
     {
         public IActionResult Promotions(){
-            return View();
+            return Ok();
         }
 
         public IActionResult PromotionAdd(){
-            return View();
+            return Ok();
         }
 
         [HttpPost]
         public IActionResult Save(){
-            return View();
+            return Ok();
         }
 
         public IActionResult Update(){
-            return View();
+            return Ok();
         }
 
         public IActionResult Delete(){
-            return View();
+            return Ok();
         }
     }
 }

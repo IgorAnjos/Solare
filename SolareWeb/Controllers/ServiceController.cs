@@ -6,7 +6,8 @@ using System.Linq;
 
 namespace SolareWeb.Controllers
 {
-    public class ServiceController : Controller
+    [ApiController]
+    public class ServiceController : ControllerBase
     {
         private readonly ApplicationDbContext database;
         public ServiceController(ApplicationDbContext dbContext)
@@ -16,11 +17,11 @@ namespace SolareWeb.Controllers
 
         public IActionResult Services(){
             var ser = database.Services.ToList();
-            return View(ser);
+            return Ok(ser);
         }
 
         public IActionResult ServiceAdd(){
-            return View();
+            return Ok();
         }
 
         [HttpPost]
@@ -28,7 +29,7 @@ namespace SolareWeb.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return View("ServiceAdd");
+                return BadRequest("ServiceAdd");
             }
             Service s = new Service();
 
@@ -46,11 +47,11 @@ namespace SolareWeb.Controllers
         }
 
         public IActionResult Update(){
-            return View();
+            return Ok();
         }
 
         public IActionResult Delete(){
-            return View();
+            return Ok();
         }
     }
 }
