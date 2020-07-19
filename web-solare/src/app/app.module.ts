@@ -15,6 +15,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './components/home/home.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { CardRelationNextComponent } from './components/card-relation-next/card-relation-next.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     CustomerAddComponent,
     ServiceProductAddComponent,
     ServiceLocationAddComponent,
-    HomeComponent
+    HomeComponent,
+    CardRelationNextComponent
   ],
   imports: [
     BrowserModule,

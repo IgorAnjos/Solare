@@ -6,7 +6,8 @@ using System.Linq;
 
 namespace SolareWeb.Controllers
 {
-    public class ServiceLocationController : Controller
+    [ApiController]
+    public class ServiceLocationController : ControllerBase
     {
         private readonly ApplicationDbContext database;
         public ServiceLocationController(ApplicationDbContext _dbContext)
@@ -17,11 +18,11 @@ namespace SolareWeb.Controllers
         public IActionResult ServiceLocations()
         {
             var svl = database.ServiceLocations.Where(_s => _s.Enable == true).ToList();
-            return View(svl);
+            return Ok(svl);
         }
 
         public IActionResult ServiceLocationAdd(){
-            return View();
+            return Ok();
         }
 
         [HttpPost]
@@ -47,11 +48,11 @@ namespace SolareWeb.Controllers
         }
 
         public IActionResult Update(){
-            return View();
+            return Ok();
         }
 
         public IActionResult Delete(){
-            return View();
+            return Ok();
         }
     }
 }

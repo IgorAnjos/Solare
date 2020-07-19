@@ -6,7 +6,8 @@ using SolareWeb.Models;
 
 namespace SolareWeb.Controllers
 {
-    public class CustomerController : Controller
+    [ApiController]
+    public class CustomerController : ControllerBase
     {
         private readonly ApplicationDbContext database;
 
@@ -18,12 +19,12 @@ namespace SolareWeb.Controllers
         public IActionResult Customers()
         {
             var cst = database.Customers.ToList();
-            return View(cst);
+            return Ok(cst);
         }
 
         public IActionResult CustomerAdd()
         {
-            return View();
+            return Ok();
         }
 
         [HttpPost]
@@ -62,11 +63,11 @@ namespace SolareWeb.Controllers
         }
 
         public IActionResult Update(){
-            return View();
+            return Ok();
         }
 
         public IActionResult Delete(){
-            return View();
+            return Ok();
         }
     }
 }
