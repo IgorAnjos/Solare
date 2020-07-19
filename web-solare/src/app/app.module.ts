@@ -13,9 +13,10 @@ import { ServiceProductComponent } from './components/service-product/service-pr
 import { CustomerAddComponent } from './components/customer-add/customer-add.component';
 import { ServiceProductAddComponent } from './components/service-product-add/service-product-add.component';
 import { ServiceLocationAddComponent } from './components/service-location-add/service-location-add.component';
-import { BtnSaveComponent } from './components/btn-save/btn-save.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './components/home/home.component';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CustomerAddComponent,
     ServiceProductAddComponent,
     ServiceLocationAddComponent,
-    BtnSaveComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,

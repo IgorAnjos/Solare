@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CustomerAddComponent implements OnInit {
 
   public title ='Novo';
-
+  
   constructor() { }
 
   ngOnInit(): void {

@@ -8,16 +8,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-menu-li nav-item">
-          <a class="nav-link">{{ menuOne }}</a>
+          <a class="nav-link" [routerLink]="['/home']">{{ menuOne }}</a>
         </li>
         <li class="nav-menu-li nav-item dropdown" dropdown>
           <a class="nav-link dropdown-toggle" dropdownToggle id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             {{ menuTwo }}
           </a>
           <div id="button-basic" *dropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a [routerLink]="['/routePath']"  class="dropdown-item nav-item-a" >Cliente</a>
-            <a [routerLink]="['/routePath']" class="dropdown-item nav-item-a" >Serviço/Produto</a>
-            <a [routerLink]="['/routePath']" class="dropdown-item nav-item-a" >Espaço de Atendimento</a>
+            <a [routerLink]="['/customer']"  class="dropdown-item nav-item-a" >Cliente</a>
+            <a [routerLink]="['/service-product']" class="dropdown-item nav-item-a" >Serviço/Produto</a>
+            <a [routerLink]="['/service-location']" class="dropdown-item nav-item-a" >Espaço de Atendimento</a>
           </div>
         </li>
         <li class="nav-menu-li nav-item">

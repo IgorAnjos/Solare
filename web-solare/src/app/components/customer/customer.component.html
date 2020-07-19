@@ -1,6 +1,8 @@
+<nav-menu></nav-menu>
 <div class="container">
   <h2>{{ title }}</h2>
-  
+  <a class="btn btn-color" [routerLink]="['/customer-add']" >Novo</a>
+  <hr>
   <table class="table table-striped table-bordred">
       <thead>
           <td>Nome</td>
@@ -8,12 +10,11 @@
           <td>Cidade de Nascimento</td>
       </thead>
       <tbody>
-        <tr>
-            <td><a href="#">Igor</a></td>
-            <td>12/08/1992</td>
-            <td>23h45</td>
+        <tr *ngFor="let customer of customers">
+            <td>{{ customer.nome }}</td>
+            <td>{{ customer.data }}</td>
+            <td>{{ customer.horario }}</td>
         </tr>
       </tbody>
   </table>
-
 </div>
