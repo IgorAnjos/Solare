@@ -4,32 +4,31 @@
   margin-top: 15%;
   margin-bottom: auto;
   width: 30em;
-  background-color: #d7baf7;
+  background-color: #8110cb; /* d7baf7 */
 }
 
 /*Header*/
 .card-header a
 {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
   font-weight: 900;
 
 }
 .card-header:hover
 {
-  background-color: #8110cb;
-  color: #ffffff;
+  background-color: #d7baf7; /*8110cb */
 }
 /*Body*/
 .input-group-prepend span
 {
   width: 50px;
   background-color: #8110cb;
-  color: #fff;
+  color: #f3e249;
 }
 h3, .remember
 {
-  color: white;
+  color: #ffffff;
 }
 .remember input
 {
@@ -42,12 +41,14 @@ h3, .remember
 {
   color: #ffffff;
   background-color: #8110cb;
+  border: 1px solid;
   width: 100%;
 }
 .login_btn:hover
 {
-  color:#8110cb;
-  background-color: white;
+  color:#000000;
+  border: none;
+  background-color: #d7baf7;
 }
 .btn-access
 {
@@ -59,13 +60,13 @@ h3, .remember
 /*Foter*/
 .card-footer a
 {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
   font-weight: 900;
 }
 .card-footer:hover
 {
-  background-color: #8110cb;
+  background-color: #d7baf7;
   color: #ffffff;
 }
 
