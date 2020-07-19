@@ -5,8 +5,6 @@ import { AppComponent } from './app.component';
 import { MatIconModule } from '@angular/material/icon';
 import { LoginComponent } from './components/login/login.component';
 import { CustomerComponent } from './components/customer/customer.component';
-import { ScheduleComponent } from './components/schedule/schedule.component';
-import { RelationComponent } from './components/relation/relation.component';
 import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 import { ServiceLocationComponent } from './components/service-location/service-location.component';
 import { ServiceProductComponent } from './components/service-product/service-product.component';
@@ -16,14 +14,13 @@ import { ServiceLocationAddComponent } from './components/service-location-add/s
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './components/home/home.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     CustomerComponent,
-    ScheduleComponent,
-    RelationComponent,
     NavMenuComponent,
     ServiceLocationComponent,
     ServiceProductComponent,
@@ -38,6 +35,7 @@ import { HomeComponent } from './components/home/home.component';
     BrowserAnimationsModule,
     MatIconModule,
     BsDropdownModule.forRoot(),
+    ModalModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

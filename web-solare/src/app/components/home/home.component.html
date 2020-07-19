@@ -1,2 +1,43 @@
 <nav-menu></nav-menu>
-<h1>Dashborad</h1>
+<div class="container-fluig">
+    <button (click)="openModal(template)" type="button" class="btn btn-color mtop-mbottom" data-toggle="modal" data-target=".cd-example-modal-lg">
+      <span class="material-icons">calendar_today</span>
+  </button>
+    <ng-template #template>
+      <div class="modal-body">
+        <form method="POST">
+          <input type="hidden" name="id" value="0"/>
+          <div class="form-group">
+              <label class="col-form-label">Cliente</label>
+              <select class="form-control">
+                <option value="0">Selecione</option>
+                <option value="1">Igor Macedo dos Anjos</option>
+                <option value="2">Daniel Prado</option>
+                <option value="3">Erick Feitosa</option>
+              </select>
+          </div>
+          <div class="form-group">
+              <label class="col-form-label">Serviço</label>
+              <select class="form-control">
+                <option value="0">Selecione</option>
+                <option value="1">Cármica</option>
+                <option value="2">Sinastría</option>
+                <option value="3">Natal</option>
+              </select>
+          </div>
+          <div class="form-check form-check-inline">
+              <label class="form-check-label" for="txtDate">Data</label>
+              <input class="form-check-input" type="date" name="Date" asp-id="txtDate" required>
+          </div>
+          <div class="form-check form-check-inline">
+              <label class="form-check-label" for="txtTime">Horário</label>
+              <input class="form-check-input" type="time" id="txtTime" required>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn a-return" data-dismiss="modal">Cancelar</button>
+        <button class="btn btn-color">Agendar</button>
+    </div>
+    </ng-template>
+</div>
