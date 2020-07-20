@@ -16,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './components/home/home.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { CardRelationNextComponent } from './components/card-relation-next/card-relation-next.component';
+import { ConfigurationComponent } from './components/configuration/configuration.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { CardRelationNextComponent } from './components/card-relation-next/card-
     ServiceProductAddComponent,
     ServiceLocationAddComponent,
     HomeComponent,
-    CardRelationNextComponent
+    CardRelationNextComponent,
+    ConfigurationComponent
   ],
   imports: [
     BrowserModule,
