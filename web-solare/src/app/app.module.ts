@@ -17,6 +17,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { CardRelationNextComponent } from './components/card-relation-next/card-relation-next.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { ConfigurationComponent } from './components/configuration/configuration.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ProfileComponent } from './components/profile/profile.component';
     ServiceLocationAddComponent,
     HomeComponent,
     CardRelationNextComponent,
-    ProfileComponent
+    ProfileComponent,
+    ConfigurationComponent
   ],
   imports: [
     BrowserModule,
