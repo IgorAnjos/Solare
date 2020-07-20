@@ -1,1 +1,35 @@
-<p>profile works!</p>
+<nav-menu></nav-menu>
+<form class="mtop-mbottom">
+  <div class="container-lg">
+      <h2>{{ title }}</h2>
+      <div class="mtop-mbottom">
+        <div class="form-group col-md-6">
+          <label for="txtName">Nome</label>
+          <input class="form-control" type="text" value="Igor Anjos" id="txtName" required readonly>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="txtDateOfBirth">Email</label>
+          <input class="form-control" type="text" value="igor.omax@gmail.com" id="txtDateOfBirth" required readonly>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="txtBirthTime">Senha</label>
+          <input class="form-control" type="text" value="**********" id="txtBirthTime" required readonly>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="txtCityOfBirth">Perfil</label>
+          <select class="form-control" name="profile" id="dropProfile" disabled>
+            <option value="0">Selecione</option>
+            <option value="1" selected>Administrador</option>
+            <option value="2">Gerente</option>
+            <option value="3">Colaborador</option>
+          </select>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="txtBirthTime">Data de Criação</label>
+          <input class="form-control" type="text" value="19/07/2020" name="CityBirth" id="txtCityOfBirth" required readonly>
+        </div>
+        <button class="btn btn-color">Editar</button>
+        <a class="btn a-return" [routerLink]="['/home']">Voltar</a>
+      </div>
+  </div>
+</form>

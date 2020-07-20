@@ -18,6 +18,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { CardRelationNextComponent } from './components/card-relation-next/card-relation-next.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ConfigurationComponent } from './components/configuration/configuration.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { ConfigurationComponent } from './components/configuration/configuration
     MatIconModule,
     BsDropdownModule.forRoot(),
     ModalModule.forRoot(),
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
