@@ -69,6 +69,9 @@ ___
 - [x] CSS3
 - [x] Bootstrap
 - [x] Angular
+- [x] Designer Patterns - Builder
+- [x] JWT
+- [x] Swagger
 
 **Tecnologias que podem ser usadas**
 **Desejo de incrementar**
