@@ -19,6 +19,7 @@ import { CardRelationNextComponent } from './components/card-relation-next/card-
 import { ProfileComponent } from './components/profile/profile.component';
 import { ConfigurationComponent } from './components/configuration/configuration.component';
 import { FormsModule } from '@angular/forms';
+import { NavConfigurationComponent } from './components/nav-configuration/nav-configuration.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     CardRelationNextComponent,
     ProfileComponent,
-    ConfigurationComponent
+    ConfigurationComponent,
+    NavConfigurationComponent
   ],
   imports: [
     BrowserModule,

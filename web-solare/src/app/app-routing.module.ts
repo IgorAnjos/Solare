@@ -10,6 +10,7 @@ import { ServiceLocationComponent } from './components/service-location/service-
 import { ServiceProductComponent } from './components/service-product/service-product.component';
 import { ServiceProductAddComponent } from './components/service-product-add/service-product-add.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { ConfigurationComponent } from './components/configuration/configuration.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'service-location', component: ServiceLocationComponent },
   { path: 'service-product', component: ServiceProductComponent },
   { path: 'service-product-add', component: ServiceProductAddComponent },
-  { path: 'profile', component: ProfileComponent }
+  { path: 'profile', component: ProfileComponent },
+  { path: 'configuration', component: ConfigurationComponent }
 ];
 
 @NgModule({
