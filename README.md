@@ -69,24 +69,25 @@ ___
 - [x] CSS3
 - [x] Bootstrap
 - [x] Angular
-- [x] Designer Patterns - Builder
-- [x] JWT
-- [x] Swagger
 
 **Tecnologias que podem ser usadas**
 **Desejo de incrementar**
 - [ ] Styled Components
 - [ ] Blazor
-- [ ] Solid
+- [x] Solid
 - [ ] TDD
 - [x] Designer Patterns
+- [x] JWT
+- [x] Swagger
+- [x] KissLog
 - [ ] CQRS
-- [ ] Clean Code
+- [x] Clean Code
 - [ ] ADO.NET
-- [x] NLog
+- [ ] NLog
 - [ ] Crystal Reports
 - [ ] SignalR
 - [x] Globalization
+- [ ] Fluent Validation
 
 ### **Hospedagem**
 - [ ] HostGator
